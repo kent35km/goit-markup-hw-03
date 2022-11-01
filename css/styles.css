@@ -39,6 +39,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+}
+
 
 /* Header */
 
@@ -114,9 +119,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .mobile-list .item:hover,
 .mobile-list .item:focus,
 .site-nav .item:hover,
-.site-nav .item:focus,
-.list-item:hover,
-.list-item:focus{
+.site-nav .item:focus{
     color: var(--accent-color);
 }
 
@@ -125,12 +128,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .hero{
     background: var(--secondary-bg-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
     width: 696px;
     margin: auto;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     color: var(--btn-white-color);
             
     font-weight: 900;
@@ -138,6 +143,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
+
 }
 
 /* BUTTON!!! */
@@ -184,9 +190,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
     margin: -1px;
 }
 
+.section{
+    padding: 94px 0;
+}
+
+.features-set{
+    
+}
+
 .features-list{
     display: flex;
-    padding: 94px 0;
+}
+
+.features-item{
+    flex-basis: calc(100% / 4 - 30px);
 }
 
 .features-item:not(:last-child){
@@ -220,7 +237,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .work-list{
     display: flex;
-    padding-bottom: 94px;
 }
 
 .work-item:not(:last-child){
@@ -234,16 +250,16 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .team-title{
-    padding-top: 94px;
 }
 
 .team-list > .list-item {
     background-color: var(--btn-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-list{
     display: flex;
-    padding-bottom: 94px;
 }
 
 .list-item:not(:last-child){
@@ -301,8 +317,15 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .address-list .list-item{
-    color: var(--rgba-color-add)
+    color: var(--rgba-color-add);
+    padding: 9px 0;
 }
+
+.address-list .list-item:hover,
+.address-list .list-item:focus{    
+    color: var(--accent-color);
+}
+
 
 /* Портфоліо */
 
@@ -335,6 +358,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .button-secondary:focus{
     background-color: var(--accent-color);
     color: var(--btn-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .card-set{
@@ -355,7 +379,10 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 
 .card-content{
-    margin: 20px 24px;
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .card-title{
